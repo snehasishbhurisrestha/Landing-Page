@@ -75,7 +75,8 @@ header .nav-items li a:hover, header .logo:hover{
 }
 .banner .container .row .col-1{
     position: relative;
-    width: 45%;
+    /* width: 45%; */
+    margin: 0 150px 0 0;
 }
 .banner .container .row .col-1 h1{
     font-size: 50px;
@@ -110,8 +111,8 @@ header .nav-items li a:hover, header .logo:hover{
     background: none;
 }
 .banner .container .row .col-2{
-    position: relative;
-    width: 40%;
+    /* position: relative; */
+    /* width: 40%; */
     display: flex;
     justify-content: flex-end;
 }
@@ -622,7 +623,7 @@ ul{
     color: #999;
 }
 
-@media(max-width: 1184px) {
+@media(max-width: 1284px) {
     header .logo{
         padding: 0;
         font-size: 25px;
@@ -655,7 +656,7 @@ ul{
         position: relative;
         width: 25px;
         height: 25px;
-        left: 33%;
+        /* left: 33%; */
         cursor: pointer;
         background: url(Assets/bars-solid.jpg);
         background-size: 30px;
@@ -673,28 +674,83 @@ ul{
     .banner{
         padding: 97px 0 0 0;
     }
+    .banner .container .row .col-1 {
+        position: relative;
+        /* width: 45%; */
+    }
 }
-
-@media(max-width: 1320px){
-    /* home */
-    .banner .container .row{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media(max-width: 390px){
+    .toggle{
+        left: 33%;
     }
     .banner .container .row .col-1{
         width: 100%;
+    }
+    .banner .container .row .col-2{
+        width: 100%;
+        padding: 22px;
+    }
+    .banner .container .row .col-2 img {
+        height: 331px;
+    }
+    .banner .container .row .col-1 h1 {
+        font-size: 43px;
+    }
+    .banner .container .row .col-1 a {
+        font-size: 19px;
+    }
+    .about .container .row .col-1{
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .banner .container .row {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .container .row .col-2 img {
+        height: 346px;
+        width: 358px;
+        object-fit: cover;
+    }
+    .banner .container .row .col-1 h1 {
+        font-size: 35px;
+    }
+    .banner .container .row .col-1 h2 {
+        font-size: 15px;
+    }
+    .banner .container .row .col-1 a {
+        font-size: 14px;
+    }
+
+}
+@media(max-width: 1320px){
+    /* home */
+    /* .banner .container .row .col-1 {
+        position: relative;
+        width: 45%;
+    } */
+    .banner .container .row .col-1{
+        position: relative;
+        /* width: 45%; */
+        margin: 0;
+    }
+    .banner .container .row .col-1{
+        /* width: 100%; */
         padding: 22px;
     }
     .banner .container .row .col-1 h1{
         padding: 2px;
     }
     .banner .container .row .col-2{
-        width: 100%;
+        /* width: 100%; */
         padding: 22px;
     }
-    .banner .container .row .col-2 img{
-        height: 360px;
+    .banner .container .row .col-2{
+        /* position: relative; */
+        display: flex;
+        justify-content: flex-end;
     }
 
     /* about */
@@ -702,11 +758,9 @@ ul{
         padding-top: 40px;
         margin-bottom: 20px;
     }
-    .about .container .row .col-1{
-        width: 100%;
-    }
+    
     .about .container .row .col-1 img {
-        height: 390px;
+        height: 359px;
     }
     .about .container .row .col-2{
         width: 100%;
